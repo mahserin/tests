@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    font-family: IRANYekanX;
+    scroll-behavior: smooth;
+}
+#chatContainer{
+    display: flex;
+    overflow: auto;
+}
+.users{
+width: 300pt;
+height: 100vh;
+background-color: #221f1f;
+box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+display: flex;
+flex-direction: column;
+overflow: auto;
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Color of the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: #444444;
+}
+
+/* Color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e;
+    border-radius: 50pt;
+    width: 8px;
+}
+.user-box{
+    width: 100%;
+    height: 70pt;
+
+    flex-direction: row;
+    display: flex;
+    border-bottom: 1px solid #464646;
+}
+.user-prof{
+
+    width: 70pt;
+    height: 70pt;
+    display: flex;
+}
+.user-prof img{
+    width: 50pt;
+    height: 50pt;
+    margin: auto;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    border-style: none;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 0 0 5pt;
+    color: #fff;
+
+}
+.user-name{
+    font-size: 17pt;
+}
+.last-message{
+    color: #6b6b6b;
+}
+.chatsec{
+    background-color: #20003d;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    overflow: auto;
+    
+
+    
+    
+    
+}
+.select-box{
+    height: 200pt;
+    width: 350pt;
+    background-color: #464646;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    margin-top: 230pt;
+    display: flex;
+    align-items: center;
+    border-radius: 15pt;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.select-box h1 {
+    margin: auto;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-header{
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    height: 50pt;
+    position: sticky;
+
+}
+.informations{
+    margin-left: 20pt;
+    height: 100;
+    width: 140pt;
+    display: flex;
+
+}
+.userprofile{
+    height: 50pt;
+    width: 50pt;
+    display: flex;
+    justify-content: center; /* centers items horizontally */
+    align-items: center; 
+}
+.userprofile img{
+    height: 80%;
+    border-radius: 50%;
+}
+.userHeaderName{
+    font-size: 20pt;
+    margin-top: 6pt;
+    margin-bottom: 0;
+    color: #fff;
+}
+.lastOnline{
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chat-body{
+    background-color: #20003d;
+    min-height: 550PT;
+    height: fit-content;
+width: 100%;
+overflow: auto;
+}
+.chats{
+     max-width: 700pt;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+
+}
+.datemessage{
+   width: 50pt;
+   height: 20pt;
+   background-color:rgba(0, 0, 0, 0.349) ;
+   margin: 5pt auto ;
+   text-align: center ;
+   border-radius: 20pt;
+   color: #fff;
+}
+.mymessage{
+    background-color: #bdffc8;
+    max-width: 300pt;
+    right: 0;
+    margin: 20pt 10pt 20pt auto;
+    border-radius: 15pt 15pt 5pt 15pt;
+    
+}
+.my-text{
+    margin: 5pt;
+    box-sizing: border-box;
+    display: block;
+}
+.my-text-info{
+    display: flex;
+}
+.my-text-info div{
+    margin: 5pt;
+}
+.your-text{
+    margin: 5pt;
+    box-sizing: border-box;
+    display: block;
+}
+.yourmessage{
+    background-color: #ffffff;
+    max-width: 300pt;
+    left: 0;
+    margin: 20pt auto 20pt 10pt;
+    border-radius: 15pt 15pt 15pt 5pt;
+    }
+.your-time{
+    margin: 5pt;
+}
+
+
+
+
+
+
+
+
+.chat-footer{
+    height: 55pt;
+    width: 100%;
+    background-color: #20003d;
+    position: sticky;
+    bottom: 0;
+}
+.type-box{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.type-input{
+    background-color: #42245f;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    width: 50vw;
+    max-width: 600pt;
+    min-width: 240pt;
+    height: 40pt;
+    border-radius: 10pt;
+    padding: 10pt;
+    font-size: 15pt;
+    margin: 5pt;
+}
+.type-input::-webkit-input-placeholder {
+    color: #17002c
+ }
+.send-button{
+    height: 40pt;
+    width: 40pt;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #42245f;
+    color: #fff;
+}
